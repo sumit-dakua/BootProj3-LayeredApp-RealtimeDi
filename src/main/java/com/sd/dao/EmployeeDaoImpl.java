@@ -44,7 +44,7 @@ public class EmployeeDaoImpl implements IEmployeeDao {
       e.printStackTrace();
       throw e;
     }
-    return 0;
+    return count;
   }
 
 }
