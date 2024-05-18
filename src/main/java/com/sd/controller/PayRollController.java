@@ -6,7 +6,7 @@ import org.springframework.stereotype.Controller;
 import com.sd.model.Employee;
 import com.sd.service.IEmployeeService;
 
-@Controller("PayRollController")
+@Controller("payRollController")
 public class PayRollController {
 
   @Autowired
