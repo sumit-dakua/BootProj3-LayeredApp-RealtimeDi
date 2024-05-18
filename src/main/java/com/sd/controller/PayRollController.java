@@ -1,12 +1,13 @@
 package com.sd.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.stereotype.Service;
 
 import com.sd.model.Employee;
 import com.sd.service.IEmployeeService;
 
-@Service("payRollService")
+@Controller("payRollController")
 public class PayRollController {
 
   @Autowired

@@ -6,9 +6,6 @@ import org.springframework.stereotype.Service;
 import com.sd.dao.IEmployeeDao;
 import com.sd.model.Employee;
 
-/**
- * EmployeeServiceImpl
- */
 @Service("employeeService")
 public class EmployeeServiceImpl implements IEmployeeService {
 
@@ -25,7 +22,7 @@ public class EmployeeServiceImpl implements IEmployeeService {
   @Override
   public void processEmployeeSalary(Employee employee) throws Exception {
     System.out.println("processing Salary ....");
-    double grossSalary = employee.getSalary() + (emp.getSalary() * 0.4f);
+    double grossSalary = employee.getSalary() + (employee.getSalary() * 0.4f);
     double netSalary = grossSalary - (grossSalary * 0.2f);
 
     employee.setGrossSalary(grossSalary);
