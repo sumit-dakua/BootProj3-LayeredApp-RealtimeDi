@@ -7,11 +7,13 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.context.annotation.ComponentScan;
 
 import com.sd.controller.PayRollController;
 import com.sd.model.Employee;
 
 @SpringBootApplication
+@ComponentScan("com.sd")
 public class BootProj3LayeredAppRealtimeDiApplication {
 
   public static void main(String[] args) {
@@ -22,7 +24,7 @@ public class BootProj3LayeredAppRealtimeDiApplication {
     String employeeName = sc.next();
     System.out.println("Employee Designation : ");
     String employeeDesignation = sc.next();
-    System.out.println("Employee Name : ");
+    System.out.println("Employee salary : ");
     double basicSalary = sc.nextDouble();
 
     Employee employee = new Employee();
